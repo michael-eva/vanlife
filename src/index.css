@@ -1,13 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #FFF7ED;
+}
+
+.logo {
+  margin-left: 20px;
+  color: #000;
+  font-family: Inter;
+  font-size: 25.353px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40.271px;
+  /* 158.842% */
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  color: #4D4D4D;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.923px;
+  /* 143.267% */
+}
+
+ul {
+  all: unset;
+  list-style: none;
+}
+
+.home-container {
+  background-image: url("./images/home-image.png");
+  background-size: cover;
+  height: 72vh;
+  padding: 100px 10px 10px 10px;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-container h1 {
+  font-size: 36px;
+  max-width: 450px;
+}
+
+.home-container p {
+  font-size: 16px;
+  max-width: 450px;
+}
+
+.home-container button {
+  border-radius: 5px;
+  background: #FF8C38;
+  border: none;
+  padding: 15px;
+  width: 200px;
+  margin-top: 20px;
+  color: white;
+}
+
+.footer {
+  background: #252525;
+  margin: 0;
+  padding: 20px;
+  color: #AAA;
+  text-align: center;
 }
