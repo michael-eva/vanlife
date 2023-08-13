@@ -13,7 +13,7 @@ export default function About() {
                 <div className="explore-vans-container">
                     <h3>Your destination is waiting.</h3>
                     <h3>   Your van is ready.</h3>
-                    <Link className="link-button">Explore our vans</Link>
+                    <button className="link-button">Explore our vans</button>
                 </div>
             </div>
         </div>
