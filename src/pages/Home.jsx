@@ -1,4 +1,3 @@
-import heroImage from "../images/home-image.png"
 
 export default function Home() {
     return (
