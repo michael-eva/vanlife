@@ -1,5 +1,5 @@
 import aboutImage from "../images/about-image.png"
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 export default function About() {
     return (
         <div className="about-page">
@@ -13,7 +13,7 @@ export default function About() {
                 <div className="explore-vans-container">
                     <h3>Your destination is waiting.</h3>
                     <h3>   Your van is ready.</h3>
-                    <button className="link-button">Explore our vans</button>
+                    <Link className="link-button">Explore our vans</Link>
                 </div>
             </div>
         </div>
