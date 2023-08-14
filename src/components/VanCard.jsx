@@ -7,7 +7,7 @@ export default function VanCard({ img, title, price, banner }) {
             <div className="van-info">
                 <p>{title}</p>
                 <div className="price">
-                    <p>{price}</p>
+                    <p>${price}</p>
                     <span>/day</span>
                 </div>
             </div>
