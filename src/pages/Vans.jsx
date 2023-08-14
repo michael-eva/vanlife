@@ -1,8 +1,24 @@
 import VanCard from "../components/VanCard"
 import Banner from "../components/Banner"
+import { useEffect, useState } from "react"
+
+// // { 
+// id: "1", 
+// name: "Modest Explorer", 
+// price: 60, 
+// description: "The Modest Explorer is a van designed to get you out of the house and into nature. This beauty is equipped with solar panels, a composting toilet, a water tank and kitchenette. The idea is that you can pack up your home and escape for a weekend or even longer!", 
+// imageUrl: "https://assets.scrimba.com/advanced-react/react-router/modest-explorer.png", 
+// type: "simple" 
+// }
+
 export default function Vans() {
+    const [vans, setVans] = useState([])
 
-
+    useEffect(() => {
+        fetch("/api/vans")
+            .then(res => res.json())
+            .then(data => setVans(data.vans))
+    }, [])
     return (
         <div className="vans-list">
             <div className="filter-options">
@@ -15,10 +31,9 @@ export default function Vans() {
                 </ul>
             </div>
             <div className="vans-container">
-                <VanCard img="image" title="image title" price="$60" banner="Simple"></VanCard>
-                <VanCard img="image" title="image title" price="$99" banner="Luxury"></VanCard>
-                <VanCard img="image" title="image title" price="$99" banner="Luxury"></VanCard>
-                <VanCard img="image" title="image title" price="$99" banner="Luxury"></VanCard>
+                {vans.map(van => (
+                    <VanCard key={van.id} img={van.imageUrl} title={van.name} price={van.price} banner={van.type}></VanCard>
+                ))}
             </div>
         </div>
     )
