@@ -132,3 +132,77 @@ ul {
   color: #AAA;
   text-align: center;
 }
+
+.vans-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100vw;
+  margin: auto;
+  gap: 10px;
+}
+
+.van-options {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.van-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.van-info p {
+  font-size: 20px;
+}
+
+.price span {
+  font-size: 14px;
+  display: flex;
+  justify-content: end;
+
+}
+
+.price p {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.banner-Simple {
+  border-radius: 5px;
+  background: #E17654;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  color: #FFEAD0;
+  width: 60px;
+}
+
+.banner-Rugged {
+  border-radius: 5px;
+  background: #115E59;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  color: #FFEAD0;
+  width: 60px;
+}
+
+.banner-Luxury {
+  border-radius: 5px;
+  background: #161616;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  color: #FFEAD0;
+  width: 60px;
+}
+
+.banner-filter {
+  border-radius: 5px;
+  background: #FFEAD0;
+  width: max-content;
+  padding: 5px 10px 5px 10px;
+  color: black;
+  width: 60px;
+}

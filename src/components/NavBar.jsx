@@ -5,7 +5,7 @@ export default function NavBar() {
             <Link to={"/"}> <div className="logo">#VANLIFE</div></Link>
             <ul className="nav-list">
                 <Link to={"/about"}> <li className="nav-items">About</li></Link>
-                <li className="nav-items">Vans</li>
+                <Link to={"/vans-list"}><li className="nav-items">Vans</li></Link>
 
             </ul>
         </div>
