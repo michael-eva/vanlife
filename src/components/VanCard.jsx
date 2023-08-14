@@ -2,7 +2,7 @@ import Banner from "./Banner"
 export default function VanCard({ img, title, price, banner }) {
     return (
         <div className="van-card">
-            <img src={img} alt="van-image" />
+            <img src={img} alt="van" />
             <div className="van-info">
                 <p>{title}</p>
                 <div className="price">
