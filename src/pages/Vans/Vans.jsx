@@ -1,5 +1,5 @@
-import VanCard from "../components/VanCard"
-import Banner from "../components/Banner"
+import VanCard from "../../components/VanCard"
+import Banner from "../../components/Banner"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 

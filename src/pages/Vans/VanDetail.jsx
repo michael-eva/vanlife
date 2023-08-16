@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import Banner from "../components/Banner"
+import Banner from "../../components/Banner"
 
 export default function VanDetail() {
-    const params = useParams()
+    const { id } = useParams()
     const [van, setVan] = useState()
+
     useEffect(() => {
-        fetch(`/api/vans/${params.id}`)
+        fetch(`/api/vans/${id}`)
             .then(res => res.json())
             .then(data => setVan(data.vans))
 
-    }, [params.id])
+    }, [id])
     return (
         <div className="van-detail-page">
             {van ? (
@@ -24,7 +25,7 @@ export default function VanDetail() {
                         <button>Rent this van</button>
                     </div>
                 </>
-            ) : <h2>Loading</h2>}
+            ) : <h2>Loading...</h2>}
         </div>
     )
 }
