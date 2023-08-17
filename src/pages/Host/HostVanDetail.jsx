@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react"
-import { useParams } from "react-router"
+
 import { Link } from "react-router-dom"
 
 export default function HostVanDetail({ currentVan }) {
@@ -12,7 +11,7 @@ export default function HostVanDetail({ currentVan }) {
             >&larr; <span>Back to all vans</span></Link>
             <div className="host-van-detail-layout-container">
                 <div className="host-van-detail">
-                    <img src={currentVan[0].imageUrl} />
+                    <img src={currentVan[0].imageUrl} alt="" />
                     <div className="host-van-detail-info-text">
                         <i
                             className={`van-type van-type-${currentVan[0].type}`}
