@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 import Banner from "../../components/Banner"
+import { Link } from "react-router-dom"
 
 export default function VanDetail() {
     const { id } = useParams()
@@ -16,6 +17,11 @@ export default function VanDetail() {
         <div className="van-detail-page">
             {van ? (
                 <>
+                    {/* <Link
+                        to=".."
+                        relative="path"
+                        className="back-button"
+                    >&larr; <span>Back to all vans</span></Link> */}
                     <img src={van.imageUrl} alt="" />
                     <div className="van-detail-body">
                         <Banner>{van.type}</Banner>

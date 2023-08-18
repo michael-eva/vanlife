@@ -25,13 +25,13 @@ export default function Vans() {
             <div className="filter-options">
                 <h3>Explore our van options</h3>
                 <div className="van-options">
-                    <button onClick={() => setSearchParams({ type: "simple" })}>
+                    <button onClick={() => setSearchParams("?type=simple")}>
                         <Banner filter="filter">Simple</Banner>
                     </button>
-                    <button onClick={() => setSearchParams({ type: "luxury" })}>
+                    <button onClick={() => setSearchParams("?type=luxury")}>
                         <Banner filter="filter">Luxury</Banner>
                     </button>
-                    <button onClick={() => setSearchParams({ type: "rugged" })}>
+                    <button onClick={() => setSearchParams("?type=rugged")}>
                         <Banner filter="filter">Rugged</Banner>
                     </button>
                     <button onClick={() => setSearchParams("")}>Clear filters</button>
